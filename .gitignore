@@ -1,0 +1,9 @@
+db.sqlite3
+accounts/__pycache__/__init__.cpython-39.pyc
+accounts/__pycache__/admin.cpython-39.pyc
+accounts/__pycache__/models.cpython-39.pyc
+accounts/migrations/__pycache__/__init__.cpython-39.pyc
+SocialMediaProject/__pycache__/__init__.cpython-39.pyc
+SocialMediaProject/__pycache__/settings.cpython-39.pyc
+SocialMediaProject/__pycache__/urls.cpython-39.pyc
+SocialMediaProject/__pycache__/wsgi.cpython-39.pyc
