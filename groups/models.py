@@ -7,8 +7,13 @@ User = get_user_model()
 
 from django import template
 register = template.Library()
-# Create your models here.
 
+
+class Group(models.Model)
+    pass
+
+class GroupMember(models.Model):
+    pass
 
 
 
