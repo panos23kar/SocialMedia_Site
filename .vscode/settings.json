@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\potis\\anaconda3\\envs\\UdemyClone1\\python.exe",
+    "python.pythonPath": "C:\\Users\\potis\\anaconda3\\envs\\socialmedia\\python.exe",
     "files.associations": {
         "**/*.html": "html",
         "**/templates/**/*.html": "django-html",
