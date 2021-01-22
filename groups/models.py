@@ -9,11 +9,21 @@ from django import template
 register = template.Library()
 
 
-class Group(models.Model)
+class Group(models.Model):
     pass
+    
+
 
 class GroupMember(models.Model):
-    pass
+    group = models.ForeignKey(Group, related_name='memberships')
+    user = models.ForeignKey(User, related_name='user_groups')
+
+    def __str__(self):
+        return self.user.username
+
+    class Meta:
+        unique_together = ('group', 'user')
+    
 
 
 
