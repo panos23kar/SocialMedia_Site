@@ -32,7 +32,7 @@ class UserPosts(generic.ListView):
             return self.post_user.posts.all()
     
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs):
+        context = super().get_context_data(**kwargs)
         context['post_user'] = self.post_user
         return context
     
