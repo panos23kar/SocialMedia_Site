@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.contrib import messages
 from django.contrib.auth.mixins import (LoginRequiredMixin,
                                         PermissionRequiredMixin)
-
+from . import models
 from django.urls import reverse
 from django.views import generic
 from django.shortcuts import get_object_or_404
