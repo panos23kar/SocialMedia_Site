@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
-
+from django.contrib import messages
 from django.http import Http404
 from django.views import generic
 
@@ -54,7 +54,7 @@ class CreatePost(LoginRequiredMixin, SelectRelatedMixin, generic.CreateView):
         self.object.save()
         return super().form_valid(form)
 
-class DeletePost(LoginRequiredMixin, SelectRelatedMixin, generic.CreateView):
+class DeletePost(LoginRequiredMixin, SelectRelatedMixin, generic.DeleteView):
     model = models.Post
     fields = '__all__'
     select_related = ('user','group')
