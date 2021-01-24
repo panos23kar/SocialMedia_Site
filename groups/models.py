@@ -1,4 +1,4 @@
-from django.db import models.sl
+from django.db import models
 from django.utils.text import slugify
 import misaka
 
