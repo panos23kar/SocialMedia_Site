@@ -34,3 +34,12 @@ class UserPosts(generic.ListView):
         context = super().get_context_data(**kwargs):
         context['post_user'] = self.post_user
         return context
+    
+class PostDetail(SelectRelatedMixin, generic.DetailView):
+    model = models.Post
+    select_related = ('user', 'group')
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        return queryset.filter(user__username__iexcat=self.kwargs.get('username'))
+    
